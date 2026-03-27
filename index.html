@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METALWORK | Промышленная оснастка и агрегатные станки</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: white; }
+        /* Затемняем фон, чтобы белый текст читался идеально */
+        .hero-gradient { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95)), url('METALWORK.jpg'); background-size: cover; background-position: center; }
+        .card { background: #1e293b; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-500 selection:text-white">
+
+    <header class="hero-gradient min-h-screen flex items-center justify-center text-center p-6">
+        <div class="max-w-4xl pt-10">
+            <h1 class="text-5xl md:text-7xl font-900 mb-6 tracking-tighter uppercase text-white drop-shadow-lg">MetalWork</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 font-light">Проектирование и производство высокотехнологичной оснастки, стапелей и агрегатных станков.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/79295313112" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-lg shadow-blue-500/30">Скинуть чертеж</a>
+                <a href="#portfolio" class="border border-slate-400 hover:border-white hover:bg-white hover:text-black text-gray-300 px-8 py-4 rounded-full font-bold text-lg transition">Наши работы</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-black mb-6 text-blue-500 uppercase tracking-wide">Собственное КБ</h2>
+                <p class="text-gray-300 text-lg leading-relaxed mb-6">Мы не просто «варим железо». Каждое изделие проходит путь от 3D-моделирования нагрузок до прецизионной сборки. Ваш результат — это математически просчитанная точность.</p>
+                <ul class="space-y-4 text-gray-400 font-medium">
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> Точность позиционирования до 0.01 мм</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> Разработка с нуля под ваше ТЗ</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> Шеф-монтаж и гарантия на всю оснастку</li>
+                </ul>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <img src="12.jpg" alt="Инжиниринг" class="relative rounded-2xl shadow-2xl object-cover w-full h-full border border-slate-700">
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-slate-900 px-6 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-black uppercase tracking-widest text-white">Проекты в металле</h2>
+            <p class="mt-4 text-gray-400">То, что уже работает на производствах заказчиков</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="card rounded-2xl overflow-hidden border border-slate-700 shadow-lg">
+                <img src="010.jpg" alt="Сварочные стапеля" class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-white">Сварочные стапеля</h3>
+                    <p class="text-gray-400 text-sm">Системы для сборки крупногабаритных рамных конструкций.</p>
+                </div>
+            </div>
+            <div class="card rounded-2xl overflow-hidden border border-slate-700 shadow-lg">
+                <img src="11.jpg" alt="Кантователи" class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-white">Кантователи</h3>
+                    <p class="text-gray-400 text-sm">Автоматизированные системы вращения тяжелых узлов.</p>
+                </div>
+            </div>
+            <div class="card rounded-2xl overflow-hidden border border-slate-700 shadow-lg">
+                <img src="01.jpg" alt="Агрегатные станки" class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-white">Агрегатные станки</h3>
+                    <p class="text-gray-400 text-sm">Высокопроизводительные линии многопозиционной обработки.</p>
+                </div>
+            </div>
+            <div class="card rounded-2xl overflow-hidden border border-slate-700 shadow-lg">
+                <img src="20.jpg" alt="Станочная оснастка" class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-white">Станочная оснастка</h3>
+                    <p class="text-gray-400 text-sm">Высокоточные гидравлические и пневматические зажимные системы.</p>
+                </div>
+            </div>
+            <div class="card rounded-2xl overflow-hidden border border-slate-700 shadow-lg">
+                <img src="03.jpg" alt="Спецстанки" class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-white">Спецстанки</h3>
+                    <p class="text-gray-400 text-sm">Нестандартные решения для узкопрофильных задач производства.</p>
+                </div>
+            </div>
+            <div class="card rounded-2xl overflow-hidden border border-slate-700 shadow-lg">
+                <img src="09.jpg" alt="Линии сборки" class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-white">Линии сборки</h3>
+                    <p class="text-gray-400 text-sm">Проектирование и запуск целых производственных участков под ключ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts" class="py-24 bg-black text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-black mb-16 text-center uppercase tracking-tighter drop-shadow-md">Связь с руководством</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+                    <p class="text-blue-500 font-bold uppercase text-xs tracking-wider mb-2">Начальник производства</p>
+                    <h3 class="text-2xl font-bold mb-6 text-white">Николай Николаевич<br>Зайковский</h3>
+                    <div class="space-y-4 text-gray-300">
+                        <p class="flex items-center gap-3">
+                            <span class="bg-slate-800 text-white font-bold px-2 py-1 rounded text-xs">BY</span> 
+                            <a href="https://wa.me/375296245761" target="_blank" class="hover:text-blue-400 text-lg transition">+375 29 624-57-61</a> 
+                            <span class="text-xs text-slate-500 font-medium">(WA/VB/TG)</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <span class="bg-slate-800 text-white font-bold px-2 py-1 rounded text-xs">RU</span> 
+                            <a href="https://wa.me/79295313112" target="_blank" class="hover:text-blue-400 text-lg transition">+7 929 531-31-12</a> 
+                            <span class="text-xs text-slate-500 font-medium">(WA)</span>
+                        </p>
+                        <div class="pt-4 mt-4 border-t border-slate-800">
+                            <a href="mailto:n.zaikovski@icloud.com" class="text-blue-400 hover:text-white transition font-medium">n.zaikovski@icloud.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+                    <p class="text-blue-500 font-bold uppercase text-xs tracking-wider mb-2">Технический директор</p>
+                    <h3 class="text-2xl font-bold mb-6 text-white">Алексей Леонидович<br>Дудук</h3>
+                    <div class="space-y-4 text-gray-300">
+                        <p class="flex items-center gap-3">
+                            <span class="bg-slate-800 text-white font-bold px-2 py-1 rounded text-xs">BY</span> 
+                            <a href="https://wa.me/375293391885" target="_blank" class="hover:text-blue-400 text-lg transition">+375 29 339-18-85</a>
+                            <span class="text-xs text-slate-500 font-medium">(WA/VB/TG)</span>
+                        </p>
+                        <div class="h-[28px] hidden md:block"></div> 
+                        <div class="pt-4 mt-4 border-t border-slate-800">
+                            <a href="mailto:alduduk@icloud.com" class="text-blue-400 hover:text-white transition font-medium">alduduk@icloud.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center text-slate-500 text-sm">
+                <p class="font-bold text-slate-400 mb-2 uppercase tracking-widest">METALWORK &copy; 2026</p>
+                <p>Проектирование и изготовление промышленной оснастки любой сложности.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
